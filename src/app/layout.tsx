@@ -1,10 +1,7 @@
 import type { Metadata } from 'next'
-import { Outfit } from "next/font/google";
 
 // These styles apply to every route in the application
 import './globals.css'
-
-const outfit = Outfit({ subsets: ["latin"]});
 
 export const metadata: Metadata = {
     title: 'Create Next App',
