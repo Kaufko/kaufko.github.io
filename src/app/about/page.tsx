@@ -8,7 +8,7 @@ const AboutMe = () => {
     const typingSpeed = 50; // Speed of typing (ms per letter)
 
     useEffect(() => {
-        let textToType = "ABOUT {" + fullText + "}";
+        const textToType = "ABOUT {" + fullText + "}";
 
         // If currentIndex is less than the length of the textToType, continue typing
         if (currentIndex < textToType.length) {
