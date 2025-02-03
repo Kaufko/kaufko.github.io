@@ -23,36 +23,34 @@ const AboutMe = () => {
     }, [currentIndex]);
 
     return (
-        <main className="relative">
-            
+        <main>
+            <div className="relative">
+                <section className="flex flex-col justify-center items-start min-h-screen font-mono">
+                    {/* Dynamically typed "ABOUT" */}
+                    <h1 className="text-4xl text-yellow-300 ml-8 inline">
+                        {displayedText.includes("ABOUT") && "ABOUT"}
+                    </h1>
 
+                    {/* Dynamically typed "{}" */}
+                    <h1 className="text-4xl text-green-400 ml-8 inline">
+                        {displayedText.includes("{") && "{"}
+                    </h1>
 
-            <section className="flex flex-col justify-center items-start min-h-screen text-white font-mono ">
-                {/* Dynamically typed "ABOUT" */}
-                <h1 className="text-4xl text-yellow-300 ml-8 inline">
-                    {displayedText.includes("ABOUT") && "ABOUT"}
-                </h1>
+                    {/* Dynamically typed content inside the brackets */}
+                    <div className="whitespace-pre text-lg ml-8">
+                        {displayedText.replace("ABOUT {", "").replace("}", "")}
+                        <span className="animate-blink">|</span>
+                    </div>
 
-                {/* Dynamically typed "{}" */}
-                <h1 className="text-4xl text-green-400 ml-8 inline">
-                    {displayedText.includes("{") && "{"}
-                </h1>
-
-                {/* Dynamically typed content inside the brackets */}
-                <div className="whitespace-pre text-lg ml-8">
-                    {displayedText.replace("ABOUT {", "").replace("}", "")} {/* Remove brackets from dynamic text */}
-                    <span className="animate-blink">|</span> {/* Blinking cursor */}
-                </div>
-
-                <h1 className="text-4xl text-green-400 ml-8 inline">
-                    {displayedText.includes("}") && "}"}
-                </h1>
-            </section>
-            <motion.div className="absolute text-lg overflow-visible font-mono flex justify-center items-center min-h-screen sm:left-1/2 lg:left-2/3 text-white top-1/2 -translate-y-1/2 sm:w-[45vw] lg:sm:w-[30vw]">
-                <p className="">{aboutMeText}</p>
-            </motion.div>
-            
-
+                    <h1 className="text-4xl text-green-400 ml-8 inline">
+                        {displayedText.includes("}") && "}"}
+                    </h1>
+                </section>
+                <motion.div className="absolute text-lg font-mono flex justify-center items-center min-h-screen top-1/2 -translate-y-1/2 sm:left-1/2 lg:left-2/3 sm:w-[45vw] lg:sm:w-[30vw]"
+                    initial={{ opacity: 0 }}  whileInView={{ opacity: 1 }}>
+                    <p className="">{aboutMeText}</p>
+                </motion.div>
+            </div>
         </main>
 
     );
