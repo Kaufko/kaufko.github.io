@@ -1,3 +1,4 @@
+"use client"; // Required only in Next.js App Router
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
