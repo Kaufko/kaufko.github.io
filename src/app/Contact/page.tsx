@@ -1,4 +1,4 @@
-const AboutMe = () => {
+const contact = () => {
     const emailText = `E-mail: filip.hermanek2@gmail.com`;
     const discordText = `Discord: Kaufko`;
     return (
@@ -21,4 +21,4 @@ const AboutMe = () => {
     );
 };
 
-export default AboutMe;
+export default contact;
