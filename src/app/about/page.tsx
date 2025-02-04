@@ -7,7 +7,7 @@ const AboutMe = () => {
     const aboutMeText = `Hi, I'm Filip Heřmánek, A.K.A Kaufko. I love tech both in the computer and mechanical world. I've been playing around with computers since the age of 7. Right now I'm learning C#, Javascript, Typescript, Windtail and React`;
     const [displayedText, setDisplayedText] = useState("");
     const [currentIndex, setCurrentIndex] = useState(0);
-    const typingSpeed = 25; // Speed of typing (ms per letter)
+    const typingSpeed = 40; // Speed of typing (ms per letter)
 
     useEffect(() => {
         const textToType = "ABOUT {" + fullText + "}";
@@ -46,7 +46,7 @@ const AboutMe = () => {
                         {displayedText.includes("}") && "}"}
                     </h1>
                 </section>
-                <motion.div className="absolute text-lg font-mono flex justify-center items-center min-h-screen top-1/2 -translate-y-1/2 sm:left-1/2 lg:left-2/3 sm:w-[45vw] lg:sm:w-[30vw]"
+                <motion.div className=" ml-10 mr-10 lg:absolute sm:relative text-lg font-mono flex lg:justify-center lg:items-center lg:min-h-screen lg:top-1/2 -translate-y-1/2 lg:left-2/3 sm:w-[45vw] lg:sm:w-[30vw]"
                     initial={{ opacity: 0 }}  whileInView={{ opacity: 1 }}>
                     <p className="">{aboutMeText}</p>
                 </motion.div>
