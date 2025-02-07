@@ -1,6 +1,4 @@
-﻿
-
-const Landing = () => {
+﻿const Landing = () => {
     return (
         <div>
         </div>
