@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 
-const contact = () => {
+const Contact = () => {
     const [formData, setFormData] = useState({ name: "", email: "", message: "" });
     const [loading, setLoading] = useState(false);
     const [responseMessage, setResponseMessage] = useState("");
@@ -81,4 +81,4 @@ const contact = () => {
         </main>
     );
 }
-export default contact;
+export default Contact;
