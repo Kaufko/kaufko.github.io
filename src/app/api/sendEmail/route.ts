@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
-const nodemailer = require("nodemailer")
+import NodeMailer from 'nodemailer';
+
 export async function POST(req: Request) {
     try {
         const { name, email, message } = await req.json();
@@ -9,7 +10,7 @@ export async function POST(req: Request) {
         }
 
         // Create a transporter object using Ethereal email
-        const transporter = nodemailer.createTransport({
+        const transporter = NodeMailer.createTransport({
             host: "smtp.ethereal.email",
             port: 587,
             secure: false,
