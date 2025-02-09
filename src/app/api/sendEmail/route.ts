@@ -9,21 +9,30 @@ export async function POST(req: Request) {
             return NextResponse.json({ error: "All fields are required" }, { status: 400 });
         }
 
+        // Ensure environment variables are available
+        const mailUser = process.env.ETHEREAL_MAIL_USER;
+        const mailPass = process.env.ETHEREAL_MAIL_PASS;
+
+        if (!mailUser || !mailPass) {
+            console.error("Missing Ethereal mail credentials");
+            return NextResponse.json({ error: "Server configuration error" }, { status: 500 });
+        }
+
         // Create a transporter object using Ethereal email
         const transporter = NodeMailer.createTransport({
             host: "smtp.ethereal.email",
             port: 587,
             secure: false,
             auth: {
-                user: process.env.EMAIL_USER,
-                pass: process.env.EMAIL_PASS,
+                user: mailUser,
+                pass: mailPass,
             },
         });
 
         // Email content
         const mailOptions = {
             from: `"${name}" <${email}>`,
-            to: process.env.EMAIL_USER, // Your Ethereal email
+            to: mailUser, // Your Ethereal email
             subject: "New Contact Form Submission",
             text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
         };
