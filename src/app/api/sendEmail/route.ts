@@ -13,6 +13,8 @@ export async function POST(req: Request) {
         const mailUser = process.env.ETHEREAL_MAIL_USER;
         const mailPass = process.env.ETHEREAL_MAIL_PASS;
 
+        console.log(mailUser, mailPass)
+        
         if (!mailUser || !mailPass) {
             console.error("Missing Ethereal mail credentials");
             return NextResponse.json({ error: "Server configuration error" }, { status: 500 });
