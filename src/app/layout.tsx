@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
+import { Menu } from '@headlessui/react'
 import Link from "next/link";
 // These styles apply to every route in the application
 import './globals.css'
