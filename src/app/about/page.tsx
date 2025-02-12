@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const AboutMe = () => {
     const fullText = `\tSoftware Engineer,\n\tExpert google searcher,\n\t3D Modeller,\n\tRigger,\n\tAnimator,\n\tMechanical Engineer`;
-    const aboutMeText = `Hi, I'm Filip Heřmánek, A.K.A Kaufko. I love tech both in the computer and mechanical world. I've been playing around with computers since the age of 7. Right now I'm learning C#, Javascript, Typescript, Windtail and React`;
+    const aboutMeText = `Hi, I'm Filip Heřmánek, A.K.A Kaufko. I am a self-taught programmer, who loves tech. I've been playing around with computers since the age of 7 and right now I'm learning C#, Javascript, Typescript, Tailwind and React`;
     const [displayedText, setDisplayedText] = useState("");
     const [currentIndex, setCurrentIndex] = useState(0);
     const typingSpeed = 40; // Speed of typing (ms per letter)
@@ -42,7 +42,7 @@ const AboutMe = () => {
                         {displayedText.includes("}") && "}"}
                     </h1>
                 </section>
-                <motion.div className=" ml-10 mr-10 lg:absolute sm:relative text-lg font-mono flex lg:justify-center lg:items-center lg:min-h-screen lg:top-1/2 -translate-y-1/2 lg:left-2/3 sm:w-[45vw] lg:sm:w-[30vw]"
+                <motion.div className="text-lg font-mono flex lg:justify-center lg:items-center lg:min-h-screen lg:top-1/2 lg:absolute lg:-translate-y-1/2 lg:right-0 sm:w-[45vw] lg:w-[40vw] sm:relative px-8"
                     initial={{ opacity: 0 }}  whileInView={{ opacity: 1 }}>
                     <p className="">{aboutMeText}</p>
                 </motion.div>

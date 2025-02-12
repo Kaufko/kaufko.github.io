@@ -17,9 +17,8 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Outfit, Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
 }
-
 
 @keyframes blink {
     0% {
