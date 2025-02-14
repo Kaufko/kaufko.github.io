@@ -3,9 +3,9 @@ import NodeMailer from 'nodemailer';
 
 export async function POST(req: Request) {
     try {
-        const { name, email, message } = await req.json();
+        const { subject, email, message } = await req.json();
 
-        if (!name || !email || !message) {
+        if (!subject || !email || !message) {
             return NextResponse.json({ error: "All fields are required" }, { status: 400 });
         }
 
@@ -33,10 +33,10 @@ export async function POST(req: Request) {
 
         // Email content
         const mailOptions = {
-            from: `"${name}" <${email}>`,
-            to: mailUser, // Your Ethereal email
-            subject: "New Contact Form Submission",
-            text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
+            from: `<${email}>`,
+            to: mailUser,
+            subject: `${subject}`,
+            text: `\nEmail: ${email}\n\nMessage:\n${message}`,
         };
 
         // Send the email

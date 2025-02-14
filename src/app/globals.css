@@ -11,13 +11,16 @@
     :root {
         --background: #02090e;
         --foreground: #ededed;
+        --maincolor: #72FF13 ;
+        --secondarycolor: #ffff29;
     }
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Helvetica, sans-serif;
+  font-family: monospace, sans-serif;
+  overflow-x: hidden;
 }
 
 @keyframes blink {
@@ -36,4 +39,16 @@ body {
 
 .animate-blink {
     animation: blink 0.7s step-end infinite;
+}
+
+.route-header-li{
+    @apply border-4 px-2 border-solid rounded-full transition duration-100 ease-in-out hover:bg-[var(--maincolor)] border-[var(--maincolor)];
+}
+
+.route-header-link{
+    @apply block transition duration-100 ease-in-out hover:text-black font-bold lg:text-lg md:text-base text-sm hover:bg-[var(--maincolor)];
+}
+
+.contactMeFormInput{
+    @apply w-full p-2 text-lg text-gray-200 bg-gray-950 rounded focus:outline-none focus:ring-4 focus:ring-[var(--maincolor)]
 }
