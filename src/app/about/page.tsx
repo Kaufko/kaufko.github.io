@@ -16,8 +16,8 @@ const AboutMe = () => {
 
     useEffect(() => {
         if (currentIndex < textToType.length) {
-            let glitchInterval: NodeJS.Timeout;
-            let typingTimeout: NodeJS.Timeout;
+            let glitchInterval: NodeJS.Timeout | null = null;
+            let typingTimeout: NodeJS.Timeout | null = null;
 
             // Start glitching the next letter
             glitchInterval = setInterval(() => {
