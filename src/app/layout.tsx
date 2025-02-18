@@ -23,9 +23,9 @@ export default function RootLayout({ children, }:
                 <Menu>
                     <header className="relative w-full z-50 top-0">
                         <div className="max-w-6xl mx-auto flex justify-between items-center p-4">
-                            <h1 className="lg:text-2xl font-bold">Filip H.</h1>
+                            <h1 className="text-2xl font-bold">Filip H.</h1>
                             <nav>
-                                <ul className="flex space-x-6">
+                                <ul className="flex sm:space-x-6">
                                     <li className="route-header-li">
                                         <Link href="/" className="route-header-link">Home</Link>
                                     </li>

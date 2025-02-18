@@ -26,10 +26,12 @@ export default function ContactPage() {
             if (response.ok) {
                 setResponseMessage("Email sent successfully!");
                 setFormData({ email: "", subject: "", message: "" });
-            } else {
+            } 
+            else {
                 setResponseMessage(data.error || "Failed to send email.");
             }
-        } catch (error) {
+        } 
+        catch (error) {
             console.error("Error:", error);
             setResponseMessage("Something went wrong. Please try again.");
         }
@@ -79,11 +81,9 @@ export default function ContactPage() {
                     {loading ? "Sending..." : "Send Message"}
                 </button>
             </form>
-            <div className={`transition-[max-height] duration-1000 ease-in-out overflow-hidden ${responseMessage ? "max-h-40 opacity-100" : "max-h-0 opacity-0"}`}>
-        <p className={"mt-4 text-center font-bold transition-opacity duration-1000 ease-in-out"}>
+        <p className={`mt-4 text-center font-bold transition-all duration-1000 ease-in-out overflow-hidden ${responseMessage ? "max-h-40 opacity-100" : "max-h-0 opacity-0"}`}>
             {responseMessage}
         </p>
     </div>
-        </div>
     );
 }

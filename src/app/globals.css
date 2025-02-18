@@ -42,11 +42,11 @@ body {
 }
 
 .route-header-li{
-    @apply border-4 px-2 border-solid rounded-full transition duration-100 ease-in-out hover:bg-[var(--maincolor)] border-[var(--maincolor)];
+    @apply sm:border-4 max-sm:hover:text-[var(--maincolor)] sm:px-2 max-sm:px-1 border-solid rounded-full sm:hover:text-black transition duration-100 ease-in-out sm:hover:bg-[var(--maincolor)] sm:border-[var(--maincolor)];
 }
 
 .route-header-link{
-    @apply block transition duration-100 ease-in-out hover:text-black font-bold lg:text-lg md:text-base text-sm hover:bg-[var(--maincolor)];
+    @apply block transition duration-100 ease-in-out font-bold lg:text-lg max-sm:text-lg sm:hover:bg-[var(--maincolor)];
 }
 
 .contactMeFormInput{
