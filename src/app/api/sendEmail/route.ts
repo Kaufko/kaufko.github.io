@@ -12,8 +12,6 @@ export async function POST(req: Request) {
         // Ensure environment variables are available
         const mailUser = process.env.ETHEREAL_MAIL_USER;
         const mailPass = process.env.ETHEREAL_MAIL_PASS;
-
-        console.log(mailUser, mailPass)
         
         if (!mailUser || !mailPass) {
             console.error("Missing Ethereal mail credentials");
