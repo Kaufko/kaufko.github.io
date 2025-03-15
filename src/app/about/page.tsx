@@ -40,10 +40,10 @@ const AboutMe = () => {
 
     return (
         <main>
-            <div className="relative">
+            <div className="relative pagewrapper">
                 {/*Make this ignore the top link bar somehow*/}
                 <section className="flex flex-col lg:justify-center max-md:py-5 sm:py-10 items-start lg:min-h-screen ">
-                    <h1 className="text-4xl text-[var(--secondarycolor)] ml-8 inline">
+                    <h1 className="text-4xl text-[var(--maincolor)] ml-8 inline">
                         {displayedText.includes("ABOUT") && "ABOUT"}
                     </h1>
                     <h1 className="text-4xl text-[var(--maincolor)] ml-8 inline">
@@ -51,7 +51,7 @@ const AboutMe = () => {
                     </h1>
 
                     {/* Glitched text rendering */}
-                    <div className="whitespace-pre text-lg ml-8">
+                    <div className="whitespace-pre ml-8 text-xl">
                         {displayedText.replace("ABOUT {", "").replace("}", "")}
                         <span className="text-red-600">{glitchChar}</span>
                         <span className="animate-blink">|</span>
@@ -63,7 +63,7 @@ const AboutMe = () => {
                 </section>
                 
                 {/* About Me Section */}
-                <motion.div className="text-lg flex lg:justify-center lg:items-center lg:min-h-screen lg:top-1/2 lg:absolute lg:-translate-y-1/2 lg:right-0 sm:w-[100vw] lg:w-[40vw] sm:relative px-8 pb-10"
+                <motion.div className="text-xl flex lg:justify-center lg:items-center lg:min-h-screen lg:top-1/2 lg:absolute lg:-translate-y-1/2 lg:right-0 sm:w-[100vw] lg:w-[40vw] sm:relative px-8 pb-10"
                     initial={{ opacity: 0 }}  whileInView={{ opacity: 1 }}>
                     <p>{aboutMeText}</p>
                 </motion.div>

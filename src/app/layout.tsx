@@ -7,19 +7,17 @@ import './globals.css'
 export const metadata: Metadata = {
     title: 'Filip - Programmer and avid hobbyist',
     description: 'Self-taught programmer motivated by creating cool personal projects. Master at googling and stackoverflow.',
-    
+
 }
 
 export default function RootLayout({ children, }:
     {
         children: React.ReactNode
     }
-)
-
-{
+) {
     return (
         <html lang="en">
-            <body>
+            <body className="removescrollbar">
                 <Menu>
                     <header className="relative w-full z-50 top-0">
                         <div className="max-w-6xl mx-auto flex justify-between items-center p-4">
@@ -35,11 +33,14 @@ export default function RootLayout({ children, }:
                                     <li className="route-header-li">
                                         <Link href="/about" className="route-header-link">About</Link>
                                     </li>
-                                    <li className="route-header-li">
-                                        <Link href="/contact" className="route-header-link">Contact</Link>
-                                    </li>
+
                                 </ul>
                             </nav>
+                            <ul>
+                                <li className="route-header-li">
+                                    <Link href="/contact" className="route-header-link">Contact</Link>
+                                </li>
+                            </ul>
                         </div>
                     </header>
                 </Menu>

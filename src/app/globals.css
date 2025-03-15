@@ -3,24 +3,31 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    --background: #e3dac9;
+    --foreground: #171717;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --background: #02090e;
-        --foreground: #ededed;
-        --maincolor: #72FF13 ;
-        --secondarycolor: #ffff29;
+        --foreground-light: #ffffff;
+        --foreground: #e3dac9;
+        --foreground-darker: #c6c6c6;
+        --background-dark: #1a1b1e;
+        --background-darker: #232428;
+        --background: #27282c;
+        --background-lighter: #313338;
+        --background-light: #383A40;
+
     }
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: monospace, sans-serif;
-  overflow-x: hidden;
+    color: var(--foreground);
+    background: var(--background-darker);
+    font-family: monospace, sans-serif;
+    overflow-x: hidden;
+    
+
 }
 
 @keyframes blink {
@@ -41,14 +48,24 @@ body {
     animation: blink 0.7s step-end infinite;
 }
 
-.route-header-li{
-    @apply sm:border-4 max-sm:hover:text-[var(--maincolor)] sm:px-2 max-sm:px-1 border-solid rounded-full sm:hover:text-black transition duration-100 ease-in-out sm:hover:bg-[var(--maincolor)] sm:border-[var(--maincolor)];
+.route-header-li {
+    @apply hover:text-[var(--foreground-light)] sm:px-2 max-sm:px-1 transition duration-100 ease-in-out;
 }
 
-.route-header-link{
-    @apply block transition duration-100 ease-in-out font-bold lg:text-lg max-sm:text-lg sm:hover:bg-[var(--maincolor)];
+.route-header-link {
+    @apply transition duration-200 ease-in-out font-bold lg:text-lg max-sm:text-lg;
 }
 
-.contactMeFormInput{
-    @apply w-full p-2 text-lg text-gray-200 bg-gray-950 rounded focus:outline-none focus:ring-4 focus:ring-[var(--maincolor)]
+.contactMeFormInput {
+    @apply w-full p-2 text-lg text-[var(--foreground-darker)] bg-[var(--background-dark)] rounded;
+}
+
+.removescrollbar{
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    scrollbar-width: none;
+    @media screen and (min-width: 768px) {
+        
+    }
 }
