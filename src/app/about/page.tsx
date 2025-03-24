@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const AboutMe = () => {
     const fullText = `\tSoftware Engineer,\n\tExpert google searcher,\n\t3D Modeller,\n\tRigger,\n\tAnimator,\n\tMechanical Engineer`;
-    const aboutMeText = `Hi, I'm Filip Heřmánek, A.K.A Kaufko. I am a self-taught programmer, who loves tech. I've been playing around with computers since the age of 7 and right now I'm learning C#, Javascript, Typescript, Tailwind and React`;
+    const aboutMeText = `Hi, I'm Filip Heřmánek, A.K.A Kaufko. I am a self-taught programmer, who loves tech. I've been playing around with computers since the age of 7 and right now I'm learning C#, C++, Javascript, Typescript, Tailwind and React`;
     
     const textToType = `ABOUT {${fullText}}`;
     const typingSpeed = 50; // Speed per character (ms)
@@ -40,10 +40,9 @@ const AboutMe = () => {
 
     return (
         <main>
-            <div className="relative pagewrapper">
-                {/*Make this ignore the top link bar somehow*/}
+            <div className="relative">
                 <section className="flex flex-col lg:justify-center max-md:py-5 sm:py-10 items-start lg:min-h-screen ">
-                    <h1 className="text-4xl text-[var(--maincolor)] ml-8 inline">
+                    <h1 className="text-4xl text-[var(--highlight-saturated)] ml-8 inline">
                         {displayedText.includes("ABOUT") && "ABOUT"}
                     </h1>
                     <h1 className="text-4xl text-[var(--maincolor)] ml-8 inline">
@@ -57,7 +56,7 @@ const AboutMe = () => {
                         <span className="animate-blink">|</span>
                     </div>
 
-                    <h1 className="text-4xl text-[var(--maincolor)] ml-8 inline">
+                    <h1 className="text-4xl text-[var(--highlight-saturated)] ml-8 inline">
                         {displayedText.includes("}") && "}"}
                     </h1>
                 </section>

@@ -10,13 +10,15 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --foreground-light: #ffffff;
-        --foreground: #e3dac9;
+        --foreground: #dbdbdb;
         --foreground-darker: #c6c6c6;
         --background-dark: #1a1b1e;
         --background-darker: #232428;
         --background: #27282c;
         --background-lighter: #313338;
         --background-light: #383A40;
+        --highlight: #4338CA;
+        --highlight-saturated: #80acff;
 
     }
 }
@@ -25,9 +27,6 @@ body {
     color: var(--foreground);
     background: var(--background-darker);
     font-family: monospace, sans-serif;
-    overflow-x: hidden;
-    
-
 }
 
 @keyframes blink {
@@ -57,15 +56,5 @@ body {
 }
 
 .contactMeFormInput {
-    @apply w-full p-2 text-lg text-[var(--foreground-darker)] bg-[var(--background-dark)] rounded;
-}
-
-.removescrollbar{
-    ::-webkit-scrollbar {
-        display: none;
-    }
-    scrollbar-width: none;
-    @media screen and (min-width: 768px) {
-        
-    }
+    @apply w-full p-2 text-lg rounded-md text-[var(--foreground-darker)] bg-[var(--background-dark)]  focus:outline-none focus:border-b-[var(--highlight)] focus:border-b-2;
 }
