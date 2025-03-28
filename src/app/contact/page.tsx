@@ -1,5 +1,9 @@
-"use client";
+﻿"use client";
 import { useState } from "react";
+import Image from 'next/image';
+
+const contactMsgTop = `Got a project? Let's chat!`;
+const contactMsgBot = `"Let's explore how we can bring your vision to life together."`;
 
 export default function ContactPage() {
     const [formData, setFormData] = useState({ email: "", subject: "", message: "" });
@@ -45,26 +49,9 @@ export default function ContactPage() {
 
     return (
         <div className="relative">
-            <div className="min-h-screen flex flex-col justify-center items-start float-right pr-20">
-                <h1 className="text-4xl font-bold mb-4 text-center">Or contact me manually</h1>
-                <ul className="mx-auto">
-                    <li className="flex flex-col">
-                        <img className="float-left" alt="discord logo"></img>
-                        <p className="float-right">Kaufko</p>
-                    </li>
-                    <li>
-                        <img className="float-left" alt="instagram logo"></img>
-                        <p className="float-right">instagram handle</p>
-                    </li>
-                    <li>
-                        <img className="float-left" alt="mail logo"></img>
-                        <p className=""float-right>filip.hermanekWebMail@gmail.com</p>
-                    </li>
-                </ul>
-            </div>
-            <div className="min-h-screen flex flex-col justify-center items-start float-left pl-20">
-                <div className="max-w-lg mx-auto mt-10 p-6 bg-[var(--background)] rounded-lg shadow-2xl">
-                    <h1 className="text-2xl font-bold mb-4 text-center">Contact me</h1>
+            <div className="flex min-h-screen flex-col items-start justify-center pl-20 lg:float-left">
+                <div className="bg-[var(--background)] mx-auto mt-10 max-w-lg rounded-lg p-6 shadow-2xl">
+                    <h1 className="mb-4 text-center text-2xl font-bold">Contact me</h1>
                     <form onSubmit={handleSubmit} className="space-y-4">
                         <input
                             type="email"
@@ -94,7 +81,7 @@ export default function ContactPage() {
                         />
                         <button
                             type="submit"
-                            className="w-full bg-[var(--highlight)] text-[var(--foreground)] font-bold text-lg py-2 rounded hover:bg-[var(--background-light)] transition"
+                            className="bg-[var(--highlight)] text-[var(--foreground)] w-full rounded py-2 text-lg font-bold transition hover:bg-[var(--background-light)]"
                             disabled={loading}
                         >
                             {loading ? "Sending..." : "Send Message"}
@@ -104,6 +91,45 @@ export default function ContactPage() {
                         {responseMessage}
                     </p>
                 </div>
+            </div>
+            <div className="flex min-h-screen flex-col items-start justify-center pr-20 lg:float-right">
+                <h1 className="mb-4 text-5xl font-bold">{ contactMsgTop}</h1>
+                <h2 className="">{contactMsgBot}</h2>
+                <ul className="mx-auto justify-between text-right text-2xl">
+                    <li className="flex items-center">
+                        <p className="">Kaufko</p>
+                        <Image
+                            className="mr-2 h-auto"
+                            src="/images/discord.png"
+                            alt="discord logo"
+                            width={48} // Set width to 512px
+                            height={48} // Set height to 512px
+                        />
+                        
+                    </li>
+                    <li className="flex items-center">
+                        <p className="">Instagram handle</p>
+                        <Image
+                            className=" h-auto"
+                            src="/images/instagram.png"
+                            alt="instagram logo"
+                            width={48} // Set width to 512px
+                            height={48} // Set height to 512px
+                        />
+
+                    </li>
+                    <li className="flex items-center">
+                        <p className="">filip.hermanekWebMail@gmail.com</p>
+                        <Image
+                            className="h-auto"
+                            src="/images/mail.png"
+                            alt="mail logo"
+                            width={48} // Set width to 512px
+                            height={48} // Set height to 512px
+                        />
+                        
+                    </li>
+                </ul>
             </div>
         </div>
     );

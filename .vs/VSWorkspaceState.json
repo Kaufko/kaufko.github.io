@@ -1,13 +1,16 @@
 {
   "ExpandedNodes": [
     "",
+    "\\.github",
     "\\public",
+    "\\public\\images",
     "\\src",
     "\\src\\app",
     "\\src\\app\\about",
-    "\\src\\app\\Contact",
-    "\\src\\app\\Test"
+    "\\src\\app\\api",
+    "\\src\\app\\contact",
+    "\\src\\app\\projects"
   ],
-  "SelectedNode": "\\src\\app\\page.tsx",
+  "SelectedNode": "\\src\\app\\globals.css",
   "PreviewInSolutionExplorer": false
 }
