@@ -7,7 +7,7 @@ const Landing = () => {
 
 
     return (
-        <div className="">
+        <div className="bg-center bg-cover bg-no-repeat min-h-screen bg-[url('/images/bg2.png')]">
             <motion.div className="flex min-h-screen flex-col justify-center text-center"
                 initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
                 <ul className="flex flex-col justify-between">
