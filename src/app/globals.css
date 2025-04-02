@@ -1,4 +1,4 @@
-@tailwind base;
+﻿@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -9,17 +9,17 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --foreground-light: #ffffff;
+        --foreground-light: White;
         --foreground: #dbdbdb;
         --foreground-darker: #c6c6c6;
         --background-dark: #1a1b1e;
-        --background-darker: #232428;
-        --background: #27282c;
+        --background-darker: #1A1B1E;
+        --background: #202023;
         --background-lighter: #313338;
         --background-light: #383A40;
         --highlight: #4338CA;
+        --highlight-midsat: #6272E5;
         --highlight-saturated: #80acff;
-
     }
 }
 
@@ -48,13 +48,13 @@ body {
 }
 
 .route-header-li {
-    @apply hover:text-[var(--foreground-light)] sm:px-2 max-sm:px-1 transition duration-100 ease-in-out;
+    @apply transition duration-100 ease-in-out hover:text-[var(--foreground-light)] sm:px-2 max-sm:px-1;
 }
 
 .route-header-link {
-    @apply transition duration-200 ease-in-out font-bold lg:text-lg max-sm:text-lg;
+    @apply font-bold transition duration-200 ease-in-out lg:text-lg max-sm:text-lg;
 }
 
 .contactMeFormInput {
-    @apply w-full p-2 text-lg rounded-md text-[var(--foreground-darker)] bg-[var(--background-dark)]  focus:outline-none focus:border-b-[var(--highlight)] focus:border-b-2;
+    @apply text-[var(--foreground-darker)] bg-[var(--background-dark)] w-full rounded-md p-2 text-lg focus:outline-none focus:border-b-[var(--highlight)] focus:border-b-2;
 }

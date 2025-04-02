@@ -1,18 +1,31 @@
 ﻿"use client";
 import { motion } from "framer-motion";
 
-const HomeText = `Hey, I'm Filip A.K.A Kaufko online. I'm a self-taught programmer, who loves to do engineer stuff. I'm guessing you're here to see some of my projects, or perhaps contact me`;
+const HomeText = `Hey, I'm Filip. I make websites, and 3D models`;
+const LocationText = `Based in the Czech Republic`;
 const Landing = () => {
 
 
-  return (
-    <div>
-      <motion.div className="text-xl flex lg:justify-center lg:items-center lg:min-h-screen lg:top-1/2 lg:absolute lg:-translate-y-1/2 lg:right-0 sm:w-[100vw] lg:w-[40vw] sm:relative px-8 pb-10"
-        initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
-        {HomeText}
-      </motion.div>
-    </div>
-  );
+    return (
+        <div className="bg-center bg-cover bg-no-repeat min-h-screen bg-[url('/images/bg2.png')]">
+            <motion.div className="flex min-h-screen flex-col justify-center text-center"
+                initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
+                <ul className="flex flex-col justify-between">
+                    <li className="p-5 text-xl font-bold">
+                        {LocationText}
+                    </li>
+                    <li className="text-5xl">
+                        Quality <strong className="text-[var(--highlight-midsat)]">web design &  model <br></br> topology</strong> techniques
+                    </li>
+                    <li className="p-5">
+                        {HomeText}
+                    </li>
+                    
+                </ul>
+                
+            </motion.div>
+        </div>
+    );
 };
 
 export default Landing;

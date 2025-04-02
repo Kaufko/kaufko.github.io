@@ -1,5 +1,4 @@
-import type { Metadata } from 'next'
-import { Menu } from '@headlessui/react'
+﻿import type { Metadata } from 'next'
 import Link from "next/link";
 
 import './globals.css'
@@ -18,8 +17,8 @@ export default function RootLayout({ children, }:
     return (
         <html lang="en">
             <body>
-                <header className="fixed w-full z-50 top-0">
-                    <div className="max-w-6xl mx-auto flex justify-between items-center p-4">
+                <header className="fixed top-0 z-50 w-full">
+                    <div className="mx-auto flex max-w-6xl items-center justify-between p-4">
                         <h1 className="text-2xl font-bold">Filip H.</h1>
                         <nav>
                             <ul className="flex sm:space-x-6">
