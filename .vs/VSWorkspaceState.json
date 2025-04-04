@@ -2,15 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\.github",
-    "\\public",
-    "\\public\\images",
+    "\\.github\\workflows",
     "\\src",
     "\\src\\app",
     "\\src\\app\\about",
     "\\src\\app\\api",
+    "\\src\\app\\api\\sendEmail",
     "\\src\\app\\contact",
     "\\src\\app\\projects"
   ],
-  "SelectedNode": "\\src\\app\\layout.tsx",
+  "SelectedNode": "\\.github\\workflows\\nextjs.yml",
   "PreviewInSolutionExplorer": false
 }

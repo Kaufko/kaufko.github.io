@@ -91,3 +91,6 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        env:
+          ETHEREAL_MAIL_USER: ${{ secrets.ETHEREAL_MAIL_USER }}
+          ETHEREAL_MAIL_PASS: ${{ secrets.ETHEREAL_MAIL_PASS }}
