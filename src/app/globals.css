@@ -52,7 +52,7 @@ body {
 }
 
 .route-header-link {
-    @apply font-bold transition duration-200 ease-in-out lg:text-lg max-sm:text-lg;
+    @apply font-bold transition duration-200 ease-in-out lg:text-xl max-lg:text-xs;
 }
 
 .contactMeFormInput {

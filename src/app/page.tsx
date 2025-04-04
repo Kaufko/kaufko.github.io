@@ -11,13 +11,13 @@ const Landing = () => {
             <motion.div className="flex min-h-screen flex-col justify-center text-center"
                 initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
                 <ul className="flex flex-col justify-between">
-                    <li className="p-5 text-xl font-bold">
+                    <li className="font-bold lg:p-5 lg:text-xl max-lg:p-1 max-lg:text-sm">
                         {LocationText}
                     </li>
-                    <li className="text-5xl">
+                    <li className="lg:text-5xl max-lg:text-2xl">
                         Quality <strong className="text-[var(--highlight-midsat)]">web design &  model <br></br> topology</strong> techniques
                     </li>
-                    <li className="p-5">
+                    <li className="lg:p-5 max-lg:p-1 max-lg:text-xs">
                         {HomeText}
                     </li>
                     
