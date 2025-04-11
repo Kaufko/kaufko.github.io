@@ -3,6 +3,7 @@
     "",
     "\\.github",
     "\\.github\\workflows",
+    "\\public",
     "\\src",
     "\\src\\app",
     "\\src\\app\\about",
@@ -11,6 +12,5 @@
     "\\src\\app\\contact",
     "\\src\\app\\projects"
   ],
-  "SelectedNode": "\\.github\\workflows\\nextjs.yml",
   "PreviewInSolutionExplorer": false
 }

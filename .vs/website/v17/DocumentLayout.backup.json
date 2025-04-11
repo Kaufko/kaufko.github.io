@@ -3,24 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Kaufko\\source\\repos\\Kaufko\\website\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kaufko\\source\\repos\\Kaufko\\website\\src\\app\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kaufko\\source\\repos\\Kaufko\\website\\src\\app\\contact\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\contact\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kaufko\\source\\repos\\Kaufko\\website\\src\\app\\layout.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\layout.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kaufko\\source\\repos\\Kaufko\\website\\src\\app\\globals.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\globals.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kaufko\\source\\repos\\Kaufko\\website\\src\\app\\layout.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\layout.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kaufko\\source\\repos\\Kaufko\\website\\src\\app\\about\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\about\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kaufko\\source\\repos\\Kaufko\\website\\src\\app\\api\\sendEmail\\route.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\api\\sendEmail\\route.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kaufko\\source\\repos\\Kaufko\\website\\.github\\workflows\\nextjs.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.github\\workflows\\nextjs.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kaufko\\source\\repos\\Kaufko\\website\\src\\app\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kaufko\\source\\repos\\Kaufko\\website\\src\\app\\projects\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
@@ -34,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,7 +54,31 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "nextjs.yml",
+              "DocumentMoniker": "C:\\Users\\Kaufko\\source\\repos\\Kaufko\\website\\.github\\workflows\\nextjs.yml",
+              "RelativeDocumentMoniker": ".github\\workflows\\nextjs.yml",
+              "ToolTip": "C:\\Users\\Kaufko\\source\\repos\\Kaufko\\website\\.github\\workflows\\nextjs.yml",
+              "RelativeToolTip": ".github\\workflows\\nextjs.yml",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAFgAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2025-04-04T22:57:59.137Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "route.ts",
+              "DocumentMoniker": "C:\\Users\\Kaufko\\source\\repos\\Kaufko\\website\\src\\app\\api\\sendEmail\\route.ts",
+              "RelativeDocumentMoniker": "src\\app\\api\\sendEmail\\route.ts",
+              "ToolTip": "C:\\Users\\Kaufko\\source\\repos\\Kaufko\\website\\src\\app\\api\\sendEmail\\route.ts",
+              "RelativeToolTip": "src\\app\\api\\sendEmail\\route.ts",
+              "ViewState": "AgIAAAwAAAAAAAAAAADwvzEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-04-04T22:53:49.365Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "page.tsx",
               "DocumentMoniker": "C:\\Users\\Kaufko\\source\\repos\\Kaufko\\website\\src\\app\\about\\page.tsx",
               "RelativeDocumentMoniker": "src\\app\\about\\page.tsx",
@@ -54,12 +86,11 @@
               "RelativeToolTip": "src\\app\\about\\page.tsx",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-04-04T22:49:54.549Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-04T22:49:54.549Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "page.tsx",
               "DocumentMoniker": "C:\\Users\\Kaufko\\source\\repos\\Kaufko\\website\\src\\app\\projects\\page.tsx",
               "RelativeDocumentMoniker": "src\\app\\projects\\page.tsx",
@@ -67,21 +98,19 @@
               "RelativeToolTip": "src\\app\\projects\\page.tsx",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-03-30T23:56:58.667Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-30T23:56:58.667Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "globals.css",
               "DocumentMoniker": "C:\\Users\\Kaufko\\source\\repos\\Kaufko\\website\\src\\app\\globals.css",
               "RelativeDocumentMoniker": "src\\app\\globals.css",
               "ToolTip": "C:\\Users\\Kaufko\\source\\repos\\Kaufko\\website\\src\\app\\globals.css",
               "RelativeToolTip": "src\\app\\globals.css",
-              "ViewState": "AgIAACkAAAAAAAAAAAAIwDIAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAIwD4AAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-03-24T21:24:23.903Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-24T21:24:23.903Z"
             },
             {
               "$type": "Document",
@@ -93,25 +122,24 @@
               "RelativeToolTip": "src\\app\\layout.tsx",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-03-24T21:19:25.946Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-24T21:19:25.946Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "page.tsx",
               "DocumentMoniker": "C:\\Users\\Kaufko\\source\\repos\\Kaufko\\website\\src\\app\\contact\\page.tsx",
               "RelativeDocumentMoniker": "src\\app\\contact\\page.tsx",
               "ToolTip": "C:\\Users\\Kaufko\\source\\repos\\Kaufko\\website\\src\\app\\contact\\page.tsx",
               "RelativeToolTip": "src\\app\\contact\\page.tsx",
-              "ViewState": "AgIAAFYAAAAAAAAAAAAQwGsAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFYAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
               "WhenOpened": "2025-03-24T17:47:36.732Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "page.tsx",
               "DocumentMoniker": "C:\\Users\\Kaufko\\source\\repos\\Kaufko\\website\\src\\app\\page.tsx",
               "RelativeDocumentMoniker": "src\\app\\page.tsx",
@@ -119,8 +147,7 @@
               "RelativeToolTip": "src\\app\\page.tsx",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-03-24T17:47:35.369Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-24T17:47:35.369Z"
             }
           ]
         }

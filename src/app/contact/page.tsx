@@ -3,7 +3,7 @@ import { useState } from "react";
 import Image from 'next/image';
 
 const contactMsgTop = `Got a project? Let's chat!`;
-const contactMsgBot = `"Let's explore how we can bring your vision to life together."`;
+const contactMsgBot = `Let's explore how we can bring your vision to life together.`;
 
 export default function ContactPage() {
     const [formData, setFormData] = useState({ email: "", subject: "", message: "" });
@@ -93,43 +93,45 @@ export default function ContactPage() {
                 </div>
             </div>
             <div className="flex min-h-screen flex-col items-start justify-center pr-20 lg:float-right">
-                <h1 className="mb-4 text-5xl font-bold">{ contactMsgTop}</h1>
-                <h2 className="">{contactMsgBot}</h2>
-                <ul className="mx-auto justify-between text-right text-2xl">
-                    <li className="flex items-center">
-                        <p className="">Kaufko</p>
-                        <Image
-                            className="mr-2 h-auto"
-                            src="/images/discord.png"
-                            alt="discord logo"
-                            width={48} // Set width to 512px
-                            height={48} // Set height to 512px
-                        />
-                        
-                    </li>
-                    <li className="flex items-center">
-                        <p className="">Instagram handle</p>
-                        <Image
-                            className=" h-auto"
-                            src="/images/instagram.png"
-                            alt="instagram logo"
-                            width={48} // Set width to 512px
-                            height={48} // Set height to 512px
-                        />
+                <div className="bg-[var(--background)] mx-auto mt-10 max-w-lg rounded-lg p-6 shadow-2xl">
+                    <h1 className="mb-4 text-center text-3xl font-bold">{contactMsgTop}</h1>
+                    <h2 className="text-center">{contactMsgBot}</h2>
+                    <ul className="w-fulltext-2xl">
+                        <li className="contactMeSocialSites">
+                            <p className="">Kaufko</p>
+                            <Image
+                                className="mr-2 h-auto"
+                                src="/images/discord.png"
+                                alt="discord logo"
+                                width={48} // Set width to 512px
+                                height={48} // Set height to 512px
+                            />
 
-                    </li>
-                    <li className="flex items-center">
-                        <p className="">filip.hermanekWebMail@gmail.com</p>
-                        <Image
-                            className="h-auto"
-                            src="/images/mail.png"
-                            alt="mail logo"
-                            width={48} // Set width to 512px
-                            height={48} // Set height to 512px
-                        />
-                        
-                    </li>
-                </ul>
+                        </li>
+                        <li className="contactMeSocialSites">
+                            <p className="">Instagram handle</p>
+                            <Image
+                                className=" h-auto"
+                                src="/images/instagram.png"
+                                alt="instagram logo"
+                                width={48} // Set width to 512px
+                                height={48} // Set height to 512px
+                            />
+
+                        </li>
+                        <li className="contactMeSocialSites">
+                            <p className="">filip.hermanekWebMail@gmail.com</p>
+                            <Image
+                                className="h-auto"
+                                src="/images/mail.png"
+                                alt="mail logo"
+                                width={48} // Set width to 512px
+                                height={48} // Set height to 512px
+                            />
+
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     );

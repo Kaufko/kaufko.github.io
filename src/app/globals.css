@@ -58,3 +58,6 @@ body {
 .contactMeFormInput {
     @apply text-[var(--foreground-darker)] bg-[var(--background-dark)] w-full rounded-md p-2 text-lg focus:outline-none focus:border-b-[var(--highlight)] focus:border-b-2;
 }
+
+.contactMeSocialSites {
+    @apply flex items-center justify-between}
