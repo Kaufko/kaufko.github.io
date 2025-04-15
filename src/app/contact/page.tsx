@@ -1,5 +1,5 @@
 ﻿"use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from 'next/image';
 
 const contactMsgTop = `Got a project? Let's chat!`;
@@ -95,38 +95,70 @@ export default function ContactPage() {
             <div className="flex min-h-screen flex-col items-start justify-center pr-20 lg:float-right">
                 <div className="bg-[var(--background)] mx-auto mt-10 max-w-lg rounded-lg p-6 shadow-2xl">
                     <h1 className="mb-4 text-center text-3xl font-bold">{contactMsgTop}</h1>
-                    <h2 className="text-center">{contactMsgBot}</h2>
-                    <ul className="w-fulltext-2xl">
+                    <h2 className="text-center px-5">{contactMsgBot}</h2>
+                    <h2 className="border relative mt-2 mb-4 border-[var(--highlight-midsat)]"></h2>
+                    <ul className="text-xl">
                         <li className="contactMeSocialSites">
-                            <p className="">Kaufko</p>
+                            <p>Kaufko</p>
                             <Image
-                                className="mr-2 h-auto"
+                                className="h-auto"
                                 src="/images/discord.png"
                                 alt="discord logo"
-                                width={48} // Set width to 512px
-                                height={48} // Set height to 512px
+                                width={48}
+                                height={48}
                             />
 
                         </li>
                         <li className="contactMeSocialSites">
-                            <p className="">Instagram handle</p>
+                            <p>Instagram handle</p>
                             <Image
-                                className=" h-auto"
+                                className="h-auto"
                                 src="/images/instagram.png"
                                 alt="instagram logo"
-                                width={48} // Set width to 512px
-                                height={48} // Set height to 512px
+                                width={48}
+                                height={48}
                             />
 
                         </li>
                         <li className="contactMeSocialSites">
-                            <p className="">filip.hermanekWebMail@gmail.com</p>
+                            <p>filip.hermanekWebMail@gmail.com</p>
                             <Image
                                 className="h-auto"
                                 src="/images/mail.png"
                                 alt="mail logo"
-                                width={48} // Set width to 512px
-                                height={48} // Set height to 512px
+                                width={48}
+                                height={48}
+                            />
+
+                        </li>
+                        <li className="contactMeSocialSites">
+                            <p>Kaufko</p>
+                            <div>
+                                <Image
+                                    src="/images/github-light.png"
+                                    alt="Light logo"
+                                    width={48}
+                                    height={48}
+                                    className="block dark:hidden object-contain"
+                                />
+                                <Image
+                                    src="/images/github-dark.png"
+                                    alt="Dark logo"
+                                    width={48}
+                                    height={48}
+                                    className="hidden dark:block object-contain"
+                                />
+                            </div>
+
+                        </li>
+                        <li className="contactMeSocialSites">
+                            <p>linkedIn</p>
+                            <Image
+                                className="h-auto"
+                                src="/images/mail.png"
+                                alt="mail logo"
+                                width={48}
+                                height={48}
                             />
 
                         </li>
