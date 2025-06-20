@@ -1,5 +1,5 @@
-﻿"use client";
-import { useEffect, useState } from "react";
+"use client";
+import { useState } from "react";
 import Image from 'next/image';
 
 const contactMsgTop = `Got a project? Let's chat!`;
