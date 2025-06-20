@@ -13,7 +13,7 @@
         --foreground: #dbdbdb;
         --foreground-darker: #c6c6c6;
         --background-dark: #1a1b1e;
-        --background-darker: #1A1B1E;
+        --background-darker: #16171a;
         --background: #202023;
         --background-lighter: #313338;
         --background-light: #383A40;
@@ -25,7 +25,7 @@
 
 body {
     color: var(--foreground);
-    background: var(--background-darker);
+    background: var(--background-dark);
     font-family: monospace, sans-serif;
 }
 
@@ -55,9 +55,25 @@ body {
     @apply font-bold transition duration-200 ease-in-out lg:text-xl max-lg:text-xs;
 }
 
-.contactMeFormInput {
+.window-form-input {
     @apply text-[var(--foreground-darker)] bg-[var(--background-dark)] w-full rounded-md p-2 text-lg focus:outline-none focus:border-b-[var(--highlight)] focus:border-b-2;
 }
 
 .contactMeSocialSites {
     @apply flex items-center justify-between}
+
+.window-frame {
+    @apply bg-[var(--background)] mx-auto mt-10 max-w-lg rounded-lg p-6 shadow-2xl border-[var(--background-darker)] border-4
+}
+
+.window-title {
+    @apply mb-4 text-center text-2xl font-bold
+}
+
+.window-title-big {
+    @apply mb-4 text-center text-4xl font-bold
+}
+
+.window-textbox {
+    @apply mb-4 text-center text-2xl font-bold
+}

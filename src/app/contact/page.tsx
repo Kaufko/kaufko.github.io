@@ -50,8 +50,8 @@ export default function ContactPage() {
     return (
         <div className="relative">
             <div className="flex min-h-screen flex-col items-start justify-center pl-20 lg:float-left">
-                <div className="bg-[var(--background)] mx-auto mt-10 max-w-lg rounded-lg p-6 shadow-2xl">
-                    <h1 className="mb-4 text-center text-2xl font-bold">Contact me</h1>
+                <div className="window-frame">
+                    <h1 className="window-title">Contact me</h1>
                     <form onSubmit={handleSubmit} className="space-y-4">
                         <input
                             type="email"
@@ -59,7 +59,7 @@ export default function ContactPage() {
                             value={formData.email}
                             onChange={handleChange}
                             placeholder="Email"
-                            className="contactMeFormInput"
+                            className="window-form-input"
                             required
                         />
                         <input
@@ -68,7 +68,7 @@ export default function ContactPage() {
                             value={formData.subject}
                             onChange={handleChange}
                             placeholder="Subject"
-                            className="contactMeFormInput"
+                            className="window-form-input"
                             required
                         />
                         <textarea
@@ -76,7 +76,7 @@ export default function ContactPage() {
                             value={formData.message}
                             onChange={handleChange}
                             placeholder="Message"
-                            className="contactMeFormInput"
+                            className="window-form-input"
                             required
                         />
                         <button
@@ -93,8 +93,8 @@ export default function ContactPage() {
                 </div>
             </div>
             <div className="flex min-h-screen flex-col items-start justify-center pr-20 lg:float-right">
-                <div className="bg-[var(--background)] mx-auto mt-10 max-w-lg rounded-lg p-6 shadow-2xl">
-                    <h1 className="mb-4 text-center text-3xl font-bold">{contactMsgTop}</h1>
+                <div className="window-frame">
+                    <h1 className="window-title-big">{contactMsgTop}</h1>
                     <h2 className="text-center px-5">{contactMsgBot}</h2>
                     <h2 className="border relative mt-2 mb-4 border-[var(--highlight-midsat)]"></h2>
                     <ul className="text-xl">
