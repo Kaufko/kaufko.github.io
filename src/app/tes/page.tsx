@@ -1,10 +1,16 @@
-const tes = () => {
-    return(
-<div className="h-screen snap-y snap-mandatory overflow-y-scroll">
-  <section className="h-screen snap-start bg-red-100">Page 1</section>
-  <section className="h-screen snap-start bg-blue-100">Page 2</section>
-</div>
-    )
+export default function Home() {
+  return (
+    <main
+      className="h-screen overflow-y-scroll scroll-smooth snap-y snap-mandatory" style={{ scrollSnapType: 'y mandatory', scrollBehavior: 'smooth' }}>
+      <section className="snap-start h-screen bg-red-500 flex items-center justify-center text-white text-5xl font-bold">
+        Page 1
+      </section>
+      <section className="snap-start h-screen bg-green-500 flex items-center justify-center text-white text-5xl font-bold">
+        Page 2
+      </section>
+      <section className="snap-start h-screen bg-blue-500 flex items-center justify-center text-white text-5xl font-bold">
+        Page 3
+      </section>
+    </main>
+  );
 }
-
-export default tes;

@@ -77,3 +77,7 @@ body {
 .window-textbox {
     @apply mb-4 text-center text-2xl font-bold
 }
+
+.viewport-vertical-page-scroll {
+    @apply h-screen overflow-y-scroll snap-y snap-mandatory
+}
