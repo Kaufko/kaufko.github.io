@@ -81,3 +81,15 @@ body {
 .viewport-vertical-page-scroll {
     @apply h-screen overflow-y-scroll snap-y snap-mandatory
 }
+
+@keyframes loading {
+  to {
+    clip-path: inset(0);
+  }
+}
+
+.animate-loading {
+  display: inline-block;
+  clip-path: inset(0 3ch 0 0);
+  animation: loading 1s steps(4, jump-none) infinite;
+}
