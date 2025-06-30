@@ -21,8 +21,8 @@ export async function POST(req: Request) {
         // Create a transporter object using Ethereal email
         const transporter = NodeMailer.createTransport({
             host: "smtp.ethereal.email",
-            port: 587,
-            secure: false,
+            port: 465, //TLS port
+            secure: true,
             auth: {
                 user: mailUser,
                 pass: mailPass,
